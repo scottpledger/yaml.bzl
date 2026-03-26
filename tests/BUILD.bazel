@@ -1,0 +1,9 @@
+load(":yaml_error_test.bzl", "yaml_error_test_suite")
+load(":yaml_parser_test.bzl", "yaml_parser_test_suite")
+load(":yaml_serializer_test.bzl", "yaml_serializer_test_suite")
+
+yaml_parser_test_suite(name = "yaml_parser_test")
+
+yaml_serializer_test_suite(name = "yaml_serializer_test")
+
+yaml_error_test_suite(name = "yaml_error_test")
